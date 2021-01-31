@@ -229,7 +229,7 @@ while Running:
     else:
         items_dict['note_2'].interact = False
 
-    if cur_level == 4:
+    if cur_level == 5:
         items_dict['note_3'].interact = True
         Room.blit(item_image, (items_dict['note_1'].x, items_dict['note_1'].y), (0, 0, item_width, item_height))
     else:
@@ -275,7 +275,7 @@ while Running:
         draw_text("(9:44 PM 8/28)", 10, 5 * text_height + 10)
 
         draw_text("8/28? That was almost two months ago… Has she been in here that long?", 10, 7 * text_height)
-    '“  ” '
+
     if items_dict['note_3'].draw_text:
         text_height = 16
         draw_text('"It seems I’ve found the way out of this mansion and if you’re reading this', 10, 10)
